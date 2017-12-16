@@ -36,7 +36,7 @@ function calcularCosto(tipoParqueo,hora,min,entrar,salir){
                 else if((hora==12)&&(min>0))     
                   return("El parqueo solo permite 12 horas maximo");  
                 else if((hora>=4)&&(hora<=12)) {
-                  if(min<=30)                          
+                  if(min<30)
                       precio=hora*cpm;
                   else
                       precio=(hora*cpm)+cpm; 
